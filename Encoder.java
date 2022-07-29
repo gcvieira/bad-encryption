@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Encoder {
 
-	private static String tabela = "ã zyxwvutsrqponmlkjihgfe+dcb=a-%@&!(*ç0).$#987654321:úABCDEFGHIJKLMNOPQRSTUVWXYZõâô_<>;{}[]^~/?";
-	private static int deslc = 7;
+	private static String tabela = "?ã zyxwvutsrqpMLONPRonmlkjihgfe+dcb=a-%@&8!ç(*0).$#9764523:1úAECDB}FHGIKJSQTVUXWZYâõô_>;{<[^~/]";
+	private static int deslc = 9;
 
 	// Recebe um string e retorna o correspondente codificado
 	public static String Encode(String str) {
@@ -60,24 +60,14 @@ public class Encoder {
 	public static void main(String[] args) {
 		// checks for arguments
 		if (args.length < 1){
-			System.out.println("No arguments... see usage:");
+			System.out.println("No arguments... see usage in the readme file");
 			System.exit(0);
-		} else if (args.length > 3) {
-			System.out.println("Too many arguments... see usage:");
+		} else if (args.length > 1) {
+			System.out.println("Too many arguments... see usage in the readme file");
 			System.exit(0);
 		}
-
-		/*
-		String st = "";
-		if (option.toLowerCase() == "e"){
-			st = Encode(a1);
-		} else if (option.toLowerCase() == "d"){
-			st = Decode(a1);
-		}
-		*/
 
 		char option = args[0].trim().charAt(0);
-
 
 		if (option == 'e') {
 			String s = getStringFromUser();
@@ -88,7 +78,7 @@ public class Encoder {
 			String dec = Decode(s);
 			System.out.println(dec);
 		} else {
-			System.out.println("Wrong option... see usage:");
+			System.out.println("Wrong option... see usage in the readme file");
 		}
 	}
 }

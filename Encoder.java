@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Encoder {
 
-	private static String tabela = "?ã zyxwvutsrqpMLONPRonmlkjihgfe+dcb=a-%@&8!ç(*0).$#9764523:1úAECDB}FHGIKJSQTVUXWZYâõô_>;{<[^~/]";
+	private static String tabela = "?ãõ zyxwvutsr^qpMLONPRonmlkji;{<[hgfe~+dcb=a-%@&8!ç(*0).$#9764523:1úAECDB}FHGIKJSQ/TVUXâWZYô_>]";
 	private static int deslc = 9;
 
 	// Recebe um string e retorna o correspondente codificado
@@ -67,7 +67,7 @@ public class Encoder {
 			System.exit(0);
 		}
 
-		char option = args[0].trim().charAt(0);
+		char option = args[0].trim().toLowerCase().charAt(0);
 
 		if (option == 'e') {
 			String s = getStringFromUser();
